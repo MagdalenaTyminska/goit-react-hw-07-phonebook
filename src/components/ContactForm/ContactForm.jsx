@@ -22,7 +22,8 @@ const ContactForm = () => {
     } else if (numberExist) {
       alert(`This number ${number} is already in contacts`);
     } else {
-      dispatch(addContact(name, number));
+      const contact = { name, number };
+      dispatch(addContact(contact));
       form.reset();
     }
   };
