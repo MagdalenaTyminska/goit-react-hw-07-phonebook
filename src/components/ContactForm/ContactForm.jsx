@@ -35,6 +35,7 @@ const ContactForm = () => {
         label="name"
         type="text"
         name="name"
+        id="name"
         pattern="^[a-zA-Zа-яА-Я]+(([' -][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$"
         required
       />
@@ -44,6 +45,7 @@ const ContactForm = () => {
         label="number"
         type="tel"
         name="number"
+        id="tel"
         pattern="\+?\d{1,4}?[-.\s]?\(?\d{1,3}?\)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}"
         required
       />
